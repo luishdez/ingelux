@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
@@ -12,9 +11,9 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+        <title>{title || 'Ingelux'}</title>
+        <html lang={lang || 'es'} />
+        <meta name="description" content={description || 'Ingelux'} />
       </Helmet>
       <App />
     </>

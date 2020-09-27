@@ -1,10 +1,19 @@
+const postmanCss = require(`postcss-font-magician`);
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [postmanCss()],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `http://localhost:8000/`,
+        short_name: `Ingelux`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
