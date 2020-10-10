@@ -1,0 +1,17 @@
+.navbar {
+  font-size: 17px;
+  margin-top: 25px;
+  height: 60px;
+
+  a {
+    color: #707070;
+  }
+
+  .nav-item {
+    margin-right: 30px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+}

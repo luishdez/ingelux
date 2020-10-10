@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Menu from './Menu';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <Menu />
       <Hero />
     </PortfolioProvider>
   );
