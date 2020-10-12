@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ImageDraggable from '../../components/DraggableImage';
 import Layout from '../../components/Layout';
 import { headData } from '../../mock/data';
 import { PortfolioProvider } from '../../context/context';
@@ -18,11 +17,7 @@ export default () => {
       </Helmet>
       <Layout>
         <PortfolioProvider>
-          <section style={{ backgroundColor: '#D9D9D9' }}>
-            <div className="container text-center" style={{ minHeight: 500 }}>
-              <ImageDraggable />
-            </div>
-          </section>
+          <span className="text-danger">_error_</span>
         </PortfolioProvider>
       </Layout>
     </>

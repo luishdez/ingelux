@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Icon from '@mdi/react';
 import { mdiLinkedin } from '@mdi/js';
 import logo from '../../images/logos/right.svg';
@@ -21,19 +22,13 @@ const Menu = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarText">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Inicio
-              </a>
+              <Link to="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Proyectos
-              </a>
+              <Link to="/proyectos">Proyectos</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Contacto
-              </a>
+              <Link to="/contacto">Contacto</Link>
             </li>
           </ul>
           <a
