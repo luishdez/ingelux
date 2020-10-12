@@ -35,12 +35,13 @@ const Menu = () => {
                 Contacto
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                <Icon path={mdiLinkedin} title="User Profile" size={1.6} />
-              </a>
-            </li>
           </ul>
+          <a
+            className="nav-link"
+            href="https://www.linkedin.com/company/ingelux-ingenier%C3%ADa-e-iluminaci%C3%B3n/"
+          >
+            <Icon path={mdiLinkedin} title="Linked In" size={1} />
+          </a>
         </div>
       </div>
     </nav>

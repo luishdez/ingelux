@@ -7,7 +7,7 @@
   background: $white-color;
   font-weight: 400;
   color: $dark-blue-text;
-  padding: 0rem 5.6rem;
+  padding: 0rem 2.6rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -24,51 +24,30 @@
   }
 
   .hero-title {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 6rem;
+    margin-bottom: 2.8rem;
     text-align: center;
 
     @include respond(tab-land) {
-      font-size: 5.5rem;
+      font-size: 4rem;
     }
 
     @include respond(tab-port) {
-      font-size: 5.4rem;
+      font-size: 2.5rem;
       text-align: center;
     }
 
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       line-height: 1.5;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
 
     @include respond(phone-xs) {
-      font-size: 3rem;
+      font-size: 1.5rem;
       margin-bottom: 3rem;
       padding: 0rem 2rem;
     }
-  }
-}
-
-@include respond(tab-land) {
-  #hero {
-    min-height: 600px;
-  }
-}
-@include respond(tab-port) {
-  #hero {
-    min-height: 540px;
-  }
-}
-@include respond(phone) {
-  #hero {
-    min-height: 440px;
-  }
-}
-@include respond(phone-xs) {
-  #hero {
-    min-height: 340px;
   }
 }

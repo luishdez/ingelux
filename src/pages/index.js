@@ -1,11 +1,24 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import App from '../components/App';
+import { Parallax } from 'react-parallax';
+import Layout from '../components/Layout';
 import { headData } from '../mock/data';
+import { PortfolioProvider } from '../context/context';
+import Hero from '../components/Hero';
+import About from '../components/About';
 import '../style/main.scss';
+import bgOffice from '../images/backgrounds/section-office.jpg';
 
 export default () => {
   const { title, lang, description } = headData;
+
+  const headingStyles = {
+    position: 'absolute',
+    left: '50%',
+    transform: 'translate(-50%,-50%)',
+    bottom: 10,
+    width: '100%',
+  };
 
   return (
     <>
@@ -15,7 +28,19 @@ export default () => {
         <html lang={lang || 'es'} />
         <meta name="description" content={description || 'Ingelux'} />
       </Helmet>
-      <App />
+      <Layout>
+        <PortfolioProvider>
+          <Hero />
+          <About />
+          <Parallax bgImage={bgOffice} bgImageAlt="fondo-oficina" strength={200}>
+            <div className="text-center" style={{ height: '700px', position: 'relative' }}>
+              <div style={headingStyles} className="heading-section text-center">
+                Nuestros proyectos
+              </div>
+            </div>
+          </Parallax>
+        </PortfolioProvider>
+      </Layout>
     </>
   );
 };

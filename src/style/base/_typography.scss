@@ -2,9 +2,23 @@ h1 {
   font-weight: 700;
 }
 
-p,
-a {
-  font-family: 'Roboto', sans-serif;
+h2 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  line-height: 28px;
+  max-width: 780px;
+  margin: auto;
+  color: #A4A4A4;
 }
 
 a,
@@ -19,16 +33,37 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.section-title {
-  margin: 0px;
-  margin-bottom: 4.5rem;
-  font-size: $big-font-size;
-  font-weight: bold;
-  text-transform: uppercase;
+.divider-sm {
+  width: 34px;
+  margin: 2px auto;
+  height: 2px;
+  background: #3475BA;
+}
 
-  @include respond(phone) {
-    font-size: 2.8rem;
-  }
+
+.super-title {
+  margin: 0px;
+  color: #3475BA;
+  font-size: 22px;
+
+  // @include respond(phone) {
+  //   font-size: 2.8rem;
+  // }
+}
+
+.heading-section {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text-small {
+  font-size: 13px;
+}
+
+.text-feature {
+  max-width: 180px !important;
+  margin: auto;
 }
 
 .dark-blue-text {
