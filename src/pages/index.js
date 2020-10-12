@@ -8,6 +8,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import '../style/main.scss';
 import bgOffice from '../images/backgrounds/section-office.jpg';
+import Projects from './blockProjects';
 
 export default () => {
   const { title, lang, description } = headData;
@@ -16,7 +17,7 @@ export default () => {
     position: 'absolute',
     left: '50%',
     transform: 'translate(-50%,-50%)',
-    bottom: 10,
+    bottom: 30,
     width: '100%',
   };
 
@@ -32,13 +33,14 @@ export default () => {
         <PortfolioProvider>
           <Hero />
           <About />
-          <Parallax bgImage={bgOffice} bgImageAlt="fondo-oficina" strength={200}>
+          <Parallax bgImage={bgOffice} bgImageAlt="fondo-oficina" strength={300}>
             <div className="text-center" style={{ height: '700px', position: 'relative' }}>
               <div style={headingStyles} className="heading-section text-center">
                 Nuestros proyectos
               </div>
             </div>
           </Parallax>
+          <Projects />
         </PortfolioProvider>
       </Layout>
     </>

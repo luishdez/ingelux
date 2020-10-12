@@ -10,11 +10,11 @@ const About = () => {
       <div className="container text-center">
         <div className="super-title">Sobre Nosotros</div>
         <div className="divider-sm mb-4" />
-        <h2 className="mb-4 pt-1">
+        <h2 className="mb-4">
           INGELUX Ingeniería e Iluminación <br />
           es una empresa enfocada en el sector industrial
         </h2>
-        <p className="mb-5" style={{ marginBottom: 90 }}>
+        <p style={{ marginBottom: 86 }}>
           Lleva ejecutando proyectos de eficiencia energética en pymes y grandes empresas desde
           2013. Desde entonces hemos crecido hasta convertirnos en una empresa referente del sector
           por su profesionalidad, relación calidad-precio del producto y servicio post-venta.
