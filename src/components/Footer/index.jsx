@@ -1,11 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import logo from '../../images/logos/vertical.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer p-section" style={{ color: 'white', fontSize: '12px' }}>
+    <footer className="footer p-section text-left" style={{ color: 'white', fontSize: '12px' }}>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
@@ -13,7 +11,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="logo"
-                style={{ width: 120, marginBottom: 20, marginLeft: -10 }}
+                style={{ width: 120, marginBottom: 20, marginTop: -22, marginLeft: -10 }}
               />
               <div>
                 <div className="divider-sm float-left" />
@@ -25,8 +23,22 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-2">x</div>
-          <div className="col-md-2" />
+          <div className="col-md-2">
+            <div style={{ height: 4 }}>
+              <div className="divider-sm float-left" />
+            </div>
+            <div className="super-title" style={{ fontSize: 14, marginTop: 2 }}>
+              Encuentra
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div style={{ height: 4 }}>
+              <div className="divider-sm float-left" />
+            </div>
+            <div className="super-title" style={{ fontSize: 14, marginTop: 2 }}>
+              Especialidades
+            </div>
+          </div>
           <div className="col-md-4" />
         </div>
       </div>
