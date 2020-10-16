@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import videoHero from '../../assets/hero.mp4';
 
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -18,6 +20,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="jumbotron">
+      <video className="hero-video" autoPlay loop>
+        <source src={videoHero} type="video/mp4" />
+      </video>
       <Container>
         <Fade top={isDesktop} bottom={isMobile} duration={1000} delay={300} distance="30px">
           <h1 className="hero-title">
