@@ -6,7 +6,8 @@ import icon4 from '../../images/icons/04.svg';
 
 const About = () => {
   return (
-    <section className="p-section">
+    <section style={{ position: 'relative' }} id="nosotros" className="p-section">
+      <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
       <div className="container text-center">
         <div className="super-title">Sobre Nosotros</div>
         <div className="divider-sm mb-4" />

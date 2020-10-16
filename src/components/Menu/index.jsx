@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import reactScroll from 'react-scroll';
 import Icon from '@mdi/react';
 import { mdiLinkedin } from '@mdi/js';
 import logo from '../../images/logos/right.svg';
@@ -37,6 +38,22 @@ const Menu = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <Link to="/">Inicio</Link>
+            </li>
+            <li className="nav-item">
+              {window.location.pathname === '/' && (
+                <reactScroll.Link
+                  to="nosotros"
+                  spy
+                  smooth
+                  delay={20}
+                  offset={-90}
+                  duration={600}
+                  className="clickable"
+                >
+                  Nosotros
+                </reactScroll.Link>
+              )}
+              {window.location.pathname !== '/' && <Link to="/#prev-nosotros">Nosotros</Link>}
             </li>
             <li className="nav-item">
               <Link to="/proyectos">Proyectos</Link>
