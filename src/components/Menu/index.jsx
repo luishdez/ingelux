@@ -20,6 +20,11 @@ const Menu = () => {
     [isScrolled]
   );
 
+  let finalPath = '/';
+  if (typeof window !== `undefined`) {
+    finalPath = window.location.pathname;
+  }
+
   return (
     <nav className={`navbar fixed-top navbar-expand-md navbar-light ${isScrolled}`}>
       <div className="container">
@@ -40,7 +45,7 @@ const Menu = () => {
               <Link to="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              {window.location.pathname === '/' && (
+              {finalPath === '/' && (
                 <reactScroll.Link
                   to="nosotros"
                   spy
@@ -53,7 +58,7 @@ const Menu = () => {
                   Nosotros
                 </reactScroll.Link>
               )}
-              {window.location.pathname !== '/' && <Link to="/#prev-nosotros">Nosotros</Link>}
+              {finalPath !== '/' && <Link to="/#prev-nosotros">Nosotros</Link>}
             </li>
             <li className="nav-item">
               <Link to="/proyectos">Proyectos</Link>
