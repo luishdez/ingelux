@@ -10,6 +10,13 @@ import '../style/main.scss';
 import bgOffice from '../images/backgrounds/section-office.jpg';
 import Projects from './blockProjects';
 
+import logo1 from '../images/logos/01.png';
+import logo2 from '../images/logos/02.png';
+import logo3 from '../images/logos/03.png';
+import logo4 from '../images/logos/04.png';
+import logo5 from '../images/logos/05.png';
+import logo6 from '../images/logos/06.png';
+
 export default () => {
   const { title, lang, description } = headData;
 
@@ -42,6 +49,28 @@ export default () => {
           </Parallax>
           <Projects />
         </PortfolioProvider>
+        <section className="container mb-5">
+          <div className="row project-logos">
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo1} alt="logo1" />
+            </div>
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo2} alt="logo2" />
+            </div>
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo3} alt="logo3" />
+            </div>
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo4} alt="logo4" />
+            </div>
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo5} alt="logo5" />
+            </div>
+            <div className="col-6 col-md-4 col-lg-2">
+              <img src={logo6} alt="logo6" />
+            </div>
+          </div>
+        </section>
       </Layout>
     </>
   );

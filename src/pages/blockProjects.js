@@ -6,7 +6,7 @@ import p3 from '../images/projects/p3.jpg';
 
 const Projects = () => {
   return (
-    <section className="p-section">
+    <section style={{ paddingBottom: 0 }} className="p-section">
       <div className="container text-center">
         <img className="icon-feature mb-1" src={icon1} style={{ width: 56 }} alt="" />
         <h2 className="mb-4 pt-1">
@@ -22,15 +22,15 @@ const Projects = () => {
         </p>
       </div>
       <div className="container-fluid">
-        <div className="row" style={{ marginTop: 100, marginBottom: 80 }}>
+        <div className="row" style={{ marginTop: 100, marginBottom: 24 }}>
           <div className="col-md-4 mb-3">
             <img src={p1} style={{ width: '100%' }} alt="project" />
           </div>
           <div className="col-md-4 mb-3">
-            <img src={p1} style={{ width: '100%' }} alt="project" />
+            <img src={p2} style={{ width: '100%' }} alt="project" />
           </div>
           <div className="col-md-4 mb-3">
-            <img src={p1} style={{ width: '100%' }} alt="project" />
+            <img src={p3} style={{ width: '100%' }} alt="project" />
           </div>
         </div>
       </div>
