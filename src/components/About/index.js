@@ -47,7 +47,7 @@ const About = () => {
           <div className="col-sm-6 col-md-3 mb-4">
             <img className="icon-feature mb-2" src={icon4} style={{ width: 56 }} alt="" />
             <h3>Innovación</h3>
-            <p className="text-small mt-2">
+            <p className="text-small mt-2 text-feature">
               Transformamos los espacios con la iluminación. Trabajando la luz con las luminarias de
               las mejores marcas desde hace más de 8 años.{' '}
             </p>

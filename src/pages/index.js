@@ -33,7 +33,7 @@ export default () => {
         <PortfolioProvider>
           <Hero />
           <About />
-          <Parallax bgImage={bgOffice} bgImageAlt="fondo-oficina" strength={300}>
+          <Parallax bgImageSize="10%" bgImage={bgOffice} bgImageAlt="fondo-oficina" strength={300}>
             <div className="text-center" style={{ height: '700px', position: 'relative' }}>
               <div style={headingStyles} className="heading-section text-center">
                 Nuestros proyectos

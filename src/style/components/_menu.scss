@@ -1,7 +1,9 @@
 .navbar {
   font-size: 17px;
-  height: 60px;
-  margin-top: 25px;
+  height: 90px;
+  margin-top: 0;
+  transition: all 0.7s ease;
+  border-bottom: 1px solid #cccccc40 !important;
 
   a {
     color: #707070;
@@ -14,4 +16,9 @@
   .nav-item:last-child {
     padding-right: 0;
   }
+}
+
+.navbar-scrolled {
+  background-color: #ffffffbf;
+  backdrop-filter: blur(7px);
 }

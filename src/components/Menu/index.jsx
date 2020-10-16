@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import Icon from '@mdi/react';
 import { mdiLinkedin } from '@mdi/js';
 import logo from '../../images/logos/right.svg';
 
 const Menu = () => {
+  const [isScrolled, setIsOnScrolled] = useState(false);
+
+  useScrollPosition(
+    ({ currPos }) => {
+      const checkScrolled = currPos.y < 0 ? 'navbar-scrolled' : '';
+
+      if (checkScrolled !== isScrolled) {
+        setIsOnScrolled(checkScrolled);
+      }
+    },
+    [isScrolled]
+  );
+
   return (
-    <nav className="navbar fixed-top navbar-expand-md navbar-light">
+    <nav className={`navbar fixed-top navbar-expand-md navbar-light ${isScrolled}`}>
       <div className="container">
         <a className="" href="/">
           <img src={logo} alt="" style={{ height: 73 }} loading="lazy" />
