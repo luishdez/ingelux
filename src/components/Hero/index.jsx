@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      <video className="hero-video" autoPlay loop>
+      <video className="hero-video" autoPlay loop muted>
         <source src={videoHero} type="video/mp4" />
       </video>
       <Container>

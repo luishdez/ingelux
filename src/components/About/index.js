@@ -17,7 +17,7 @@ const About = () => {
         </h2>
         <p style={{ marginBottom: 86 }}>
           Lleva ejecutando proyectos de eficiencia energética en pymes y grandes empresas desde
-          2013. Desde entonces hemos crecido hasta convertirnos en una empresa referente del sector
+          2015. Desde entonces hemos crecido hasta convertirnos en una empresa referente del sector
           por su profesionalidad, relación calidad-precio del producto y servicio post-venta.
         </p>
         <div className="row">
@@ -50,7 +50,7 @@ const About = () => {
             <h3>Innovación</h3>
             <p className="text-small mt-2 text-feature">
               Transformamos los espacios con la iluminación. Trabajando la luz con las luminarias de
-              las mejores marcas desde hace más de 8 años.{' '}
+              las mejores marcas desde hace más de 5 años.{' '}
             </p>
           </div>
         </div>
