@@ -1,4 +1,13 @@
 /* Call to Action Button */
+.section-box {
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:focus {
+    border: 1px solid blue;
+  }
+}
 
 .cta-btn {
   display: inline-block;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { Navbar, Nav } from 'react-bootstrap';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import reactScroll from 'react-scroll';
 import Icon from '@mdi/react';
@@ -26,21 +27,14 @@ const Menu = () => {
   }
 
   return (
-    <nav className={`navbar fixed-top navbar-expand-md navbar-light ${isScrolled}`}>
+    <Navbar bg="transparent" expand="md" className={`fixed-top ${isScrolled}`}>
       <div className="container">
-        <a className="" href="/">
+        <Navbar.Brand href="/">
           <img src={logo} alt="" style={{ height: 73 }} loading="lazy" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarText">
-          <ul className="navbar-nav ml-auto">
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
             <li className="nav-item active">
               <Link to="/">Inicio</Link>
             </li>
@@ -66,16 +60,16 @@ const Menu = () => {
             <li className="nav-item">
               <Link to="/contacto">Contacto</Link>
             </li>
-          </ul>
-          <a
-            className="nav-link"
-            href="https://www.linkedin.com/company/ingelux-ingenier%C3%ADa-e-iluminaci%C3%B3n/"
-          >
-            <Icon path={mdiLinkedin} title="Linked In" size={1} />
-          </a>
-        </div>
+            <a
+              className="nav-link"
+              href="https://www.linkedin.com/company/ingelux-ingenier%C3%ADa-e-iluminaci%C3%B3n/"
+            >
+              <Icon path={mdiLinkedin} title="Linked In" size={1} />
+            </a>
+          </Nav>
+        </Navbar.Collapse>
       </div>
-    </nav>
+    </Navbar>
   );
 };
 
