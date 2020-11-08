@@ -4,7 +4,7 @@ import ProjectCarousel from './ProjectCarousel';
 
 const Workflow = () => {
   return (
-    <section style={{ position: 'relative' }} id="nosotros" className="p-section">
+    <section id="nosotros" style={{ position: 'relative' }} className="p-section">
       <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
       <div className="container text-center">
         <h2 className="mb-4">Auditoría energética con renderización 3D</h2>

@@ -20,7 +20,7 @@ export default () => {
       </Helmet>
       <Layout>
         <PortfolioProvider>
-          <section id="contact-hero" className="container text-center" style={{ minHeight: 500 }} />
+          <section id="contact-hero" className="text-center" style={{ minHeight: 500 }} />
           <section style={{ position: 'relative' }} id="nosotros" className="p-section">
             <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
             <div className="container text-center">

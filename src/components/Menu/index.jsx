@@ -8,10 +8,15 @@ import { mdiLinkedin } from '@mdi/js';
 import logo from '../../images/logos/right.svg';
 
 const Menu = () => {
-  const [isScrolled, setIsOnScrolled] = useState(false);
+  const [isScrolled, setIsOnScrolled] = useState('');
 
   useScrollPosition(
     ({ currPos }) => {
+      if (typeof window !== `undefined` && window.location.pathname === '/contacto/') {
+        setIsOnScrolled('navbar-scrolled');
+        return;
+      }
+
       const checkScrolled = currPos.y < 0 ? 'navbar-scrolled' : '';
 
       if (checkScrolled !== isScrolled) {
@@ -24,6 +29,10 @@ const Menu = () => {
   let finalPath = '/';
   if (typeof window !== `undefined`) {
     finalPath = window.location.pathname;
+
+    if (finalPath === '/contacto/' && isScrolled === '') {
+      setIsOnScrolled('navbar-scrolled');
+    }
   }
 
   return (
@@ -55,10 +64,10 @@ const Menu = () => {
               {finalPath !== '/' && <Link to="/#prev-nosotros">Nosotros</Link>}
             </li>
             <li className="nav-item">
-              <Link to="/proyectos">Proyectos</Link>
+              <Link to="/proyectos/">Proyectos</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contacto">Contacto</Link>
+              <Link to="/contacto/">Contacto</Link>
             </li>
             <li className="nav-item">
               <a
