@@ -1,6 +1,13 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import icon1 from '../../images/icons/01.svg';
+import industry from '../../images/icons/06.svg';
+import hotel from '../../images/icons/07.svg';
+import car from '../../images/icons/08.svg';
+import offices from '../../images/icons/09.svg';
+import gas from '../../images/icons/13.svg';
+
+import arrowLeftImg from '../../images/icons/arrow-left.svg';
+import arrowRightImg from '../../images/icons/arrow-right.svg';
 
 // // Small devices (landscape phones, 576px and up)
 // // Medium devices (tablets, 768px and up)
@@ -30,11 +37,11 @@ const responsive = {
 // eslint-disable-next-line react/prop-types
 const ArrowGroup = ({ next, previous }) => (
   <div className="carousel-button-group">
-    <button type="button" onClick={() => previous()}>
-      XXXX
+    <button className="btn btn-link" type="button" onClick={() => previous()}>
+      <img style={{ height: 54 }} src={arrowLeftImg} alt="move-left" />
     </button>
-    <button type="button" onClick={() => next()}>
-      BBBB
+    <button className="btn btn-link" type="button" onClick={() => next()}>
+      <img style={{ height: 54 }} src={arrowRightImg} alt="move-right" />
     </button>
   </div>
 );
@@ -43,53 +50,53 @@ const ProjectCarousel = () => {
   return (
     <div className="container" style={{ position: 'relative' }}>
       <Carousel
-	infinite
-	partialVisible
-	arrows={false}
-	customButtonGroup={<ArrowGroup />}
-	renderButtonGroupOutside
-	responsive={responsive}
+        infinite
+        partialVisible
+        arrows={false}
+        customButtonGroup={<ArrowGroup />}
+        renderButtonGroupOutside
+        responsive={responsive}
       >
-	<div className="project-item">
-	  <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
-	  <h3>Sector industrial</h3>
-	  <p className="text-small mt-2 text-feature">
-	    Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
-	    porque tu éxito, es el nuestro.
-	  </p>
-	</div>
-	<div className="project-item">
-	  <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
-	  <h3>Sector industrial</h3>
-	  <p className="text-small mt-2 text-feature">
-	    Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
-	    porque tu éxito, es el nuestro.
-	  </p>
-	</div>
-	<div className="project-item">
-	  <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
-	  <h3>Sector industrial</h3>
-	  <p className="text-small mt-2 text-feature">
-	    Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
-	    porque tu éxito, es el nuestro.
-	  </p>
-	</div>
-	<div className="project-item">
-	  <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
-	  <h3>Sector industrial</h3>
-	  <p className="text-small mt-2 text-feature">
-	    Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
-	    porque tu éxito, es el nuestro.
-	  </p>
-	</div>
-	<div className="project-item">
-	  <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
-	  <h3>Sector industrial</h3>
-	  <p className="text-small mt-2 text-feature">
-	    Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
-	    porque tu éxito, es el nuestro.
-	  </p>
-	</div>
+        <div className="project-item">
+          <img className="icon-feature mb-2" src={industry} style={{ width: 56 }} alt="" />
+          <h3>Sector industrial</h3>
+          <p className="text-small mt-2 text-feature">
+            La iluminación de grandes superficies con una homogeneidad continua es una de nuestras
+            especialidades
+          </p>
+        </div>
+        <div className="project-item">
+          <img className="icon-feature mb-2" src={car} style={{ width: 56 }} alt="" />
+          <h3>Hoteles y Retail</h3>
+          <p className="text-small mt-2 text-feature">
+            Conseguir el confort y el relax de los clientes a la vez que la capacidad de centrar la
+            atención en un producto es posible con una buena iluminación
+          </p>
+        </div>
+        <div className="project-item">
+          <img className="icon-feature mb-2" src={hotel} style={{ width: 56 }} alt="" />
+          <h3>Concesionarios</h3>
+          <p className="text-small mt-2 text-feature">
+            La exigencia de un alto rendimiento en el grado de iluminación para mostrar el hasta el
+            ultimo detalle del producto en venta
+          </p>
+        </div>
+        <div className="project-item">
+          <img className="icon-feature mb-2" src={offices} style={{ width: 56 }} alt="" />
+          <h3>Oficinas</h3>
+          <p className="text-small mt-2 text-feature">
+            El confort visual es un requisito para poder conseguir una mayor productividad en el
+            trabajo
+          </p>
+        </div>
+        <div className="project-item">
+          <img className="icon-feature mb-2" src={gas} style={{ width: 56 }} alt="" />
+          <h3>Gasolineras</h3>
+          <p className="text-small mt-2 text-feature">
+            Conseguir el confort y el relax de los clientes a la vez que la capacidad de centrar la
+            atención en un producto es posible con una buena iluminación
+          </p>
+        </div>
       </Carousel>
     </div>
   );

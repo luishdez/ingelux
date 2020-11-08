@@ -60,14 +60,14 @@ const Menu = () => {
             <li className="nav-item">
               <Link to="/contacto">Contacto</Link>
             </li>
-	    <li className="nav-item">
-	      <a
-		className="nav-link"
-		href="https://www.linkedin.com/company/ingelux-ingenier%C3%ADa-e-iluminaci%C3%B3n/"
-	      >
-		<Icon path={mdiLinkedin} title="Linked In" size={1} />
-	      </a>
-	    </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://www.linkedin.com/company/ingelux-ingenier%C3%ADa-e-iluminaci%C3%B3n/"
+              >
+                <Icon path={mdiLinkedin} title="Linked In" size={1} />
+              </a>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </div>

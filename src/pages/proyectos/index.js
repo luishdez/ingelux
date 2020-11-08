@@ -24,7 +24,7 @@ export default () => {
               <ImageDraggable />
             </div>
           </section>
-	  <Workflow />
+          <Workflow />
         </PortfolioProvider>
       </Layout>
     </>
