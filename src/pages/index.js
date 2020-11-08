@@ -52,7 +52,7 @@ export default () => {
         <section className="container mb-5">
           <div className="row project-logos">
             <div className="col-6 col-md-4 col-lg-2">
-              <img style={{ maxWidth: 130, marginTop: 6 }} src={logo1} alt="logo1" />
+              <img style={{ maxWidth: 120, marginTop: 8 }} src={logo1} alt="logo1" />
             </div>
             <div className="col-6 col-md-4 col-lg-2">
               <img style={{ maxWidth: 160, marginTop: -2 }} src={logo2} alt="logo2" />
@@ -61,13 +61,13 @@ export default () => {
               <img style={{ maxWidth: 150, marginTop: -7 }} src={logo3} alt="logo3" />
             </div>
             <div className="col-6 col-md-4 col-lg-2">
-              <img src={logo4} alt="logo4" />
+              <img style={{ maxWidth: 140, marginTop: 3 }} src={logo4} alt="logo4" />
             </div>
             <div className="col-6 col-md-4 col-lg-2">
               <img style={{ maxWidth: 160, marginTop: -4 }} src={logo5} alt="logo5" />
             </div>
             <div className="col-6 col-md-4 col-lg-2">
-              <img style={{ maxWidth: 120, marginTop: 8 }} src={logo6} alt="logo6" />
+              <img style={{ maxWidth: 120, marginTop: 9 }} src={logo6} alt="logo6" />
             </div>
           </div>
         </section>
