@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import Layout from '../../components/Layout';
 import { headData } from '../../mock/data';
 import { PortfolioProvider } from '../../context/context';
+import phone from '../../images/icons/09.svg';
+import place from '../../images/icons/10.svg';
+import email from '../../images/icons/11.svg';
 
 export default () => {
   const { title, lang, description } = headData;
@@ -17,7 +20,29 @@ export default () => {
       </Helmet>
       <Layout>
         <PortfolioProvider>
-          <span className="text-danger">_error_</span>
+          <section id="contact-hero" className="container text-center" style={{ minHeight: 500 }} />
+          <section style={{ position: 'relative' }} id="nosotros" className="p-section">
+            <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
+            <div className="container text-center">
+              <div className="row" style={{ margin: 'auto', maxWidth: 1200 }}>
+                <div className="col-md-4 mb-4">
+                  <img className="icon-feature mb-2" src={phone} style={{ width: 56 }} alt="" />
+                  <h3>Teléfono</h3>
+                  <p className="mt-2 text-feature">+34 685 866 594</p>
+                </div>
+                <div className="col-md-4 mb-4">
+                  <img className="icon-feature mb-2" src={place} style={{ width: 56 }} alt="" />
+                  <h3>Localización</h3>
+                  <p className="mt-2 text-feature">Calle de los Arcos 5 28033 Madrid</p>
+                </div>
+                <div className="col-md-4 mb-4">
+                  <img className="icon-feature mb-2" src={email} style={{ width: 56 }} alt="" />
+                  <h3>Email</h3>
+                  <p className="mt-2 text-feature">info@ingeluxsl.com</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </PortfolioProvider>
       </Layout>
     </>
