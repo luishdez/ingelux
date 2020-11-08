@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import { headData } from '../../mock/data';
 import { PortfolioProvider } from '../../context/context';
 import Workflow from './workflow';
+import OurProjects from './OurProjects';
 
 export default () => {
   const { title, lang, description } = headData;
@@ -25,6 +26,7 @@ export default () => {
             </div>
           </section>
           <Workflow />
+          <OurProjects />
         </PortfolioProvider>
       </Layout>
     </>
