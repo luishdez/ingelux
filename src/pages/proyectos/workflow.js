@@ -8,7 +8,7 @@ const Workflow = () => {
       <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
       <div className="container text-center">
         <h2 className="mb-4">Auditoría energética con renderización 3D</h2>
-        <p style={{ marginBottom: 60 }}>
+        <p style={{ marginBottom: 90 }}>
           Realizamos para nuestros clientes estudios luminotécnicos, pasando por el análisis de
           necesidades, cumplimientos de normativa, consumos energéticos de la instalación, nuevas
           tecnologías para el control de la iluminación, cálculos luminotécnicos completos con
