@@ -4,6 +4,7 @@ import ImageDraggable from '../../components/DraggableImage';
 import Layout from '../../components/Layout';
 import { headData } from '../../mock/data';
 import { PortfolioProvider } from '../../context/context';
+import Workflow from './workflow';
 
 export default () => {
   const { title, lang, description } = headData;
@@ -23,6 +24,7 @@ export default () => {
               <ImageDraggable />
             </div>
           </section>
+	  <Workflow />
         </PortfolioProvider>
       </Layout>
     </>

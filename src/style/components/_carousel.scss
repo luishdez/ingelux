@@ -1,0 +1,14 @@
+.react-multi-carousel-list  {
+  margin: 0 30px;
+}
+
+.carousel-button-group {
+  border: 1px solid blue;
+  top: 90px;
+  width: calc(100% + 20px);
+  height: 100px;
+  margin: 0 -20px 0 -20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
