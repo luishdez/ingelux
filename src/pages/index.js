@@ -49,7 +49,7 @@ export default () => {
           </Parallax>
           <Projects />
         </PortfolioProvider>
-        <section className="container mb-5">
+        <section style={{ marginBottom: 120, marginTop: 100 }} className="container">
           <div className="row project-logos">
             <div className="col-6 col-md-4 col-lg-2">
               <img style={{ maxWidth: 120, marginTop: 8 }} src={logo1} alt="logo1" />
