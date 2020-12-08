@@ -43,29 +43,51 @@ export default () => {
               </div>
             </div>
           </section>
-          <div style={{ margin: 'auto', marginBottom: 100, maxWidth: 600, textAlign: 'left' }}>
-            <form action="https://getform.io/f/07c5ebc5-5f85-4829-bd2c-3d80aa99cf2e" method="POST">
-              <div className="form-group">
-                <label htmlFor="name">Nombre</label>
-                <input type="text" className="form-control" name="name" id="name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="tel">Teléfono</label>
-                <input type="text" className="form-control" name="tel" id="tel" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" className="form-control" id="email" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Mensaje</label>
-                <textarea rows="6" type="text" name="message" className="form-control" id="text" />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Envíar
-              </button>
-            </form>
-          </div>
+	  <section>
+	    <h2>¿En qué podemos ayudarte?</h2>
+	    <div
+	      style={{
+		margin: 'auto',
+		marginTop: 40,
+		marginBottom: 100,
+		maxWidth: 600,
+		padding: 20,
+		textAlign: 'left',
+	      }}
+	    >
+	      <form
+		action="https://getform.io/f/07c5ebc5-5f85-4829-bd2c-3d80aa99cf2e"
+		method="POST"
+	      >
+		<div className="form-group">
+		  <label htmlFor="name">Nombre</label>
+		  <input type="text" className="form-control" name="name" id="name" />
+		</div>
+		<div className="form-group">
+		  <label htmlFor="tel">Teléfono</label>
+		  <input type="text" className="form-control" name="tel" id="tel" required />
+		</div>
+		<div className="form-group">
+		  <label htmlFor="email">Email</label>
+		  <input type="email" className="form-control" id="email" required />
+		</div>
+		<div className="form-group">
+		  <label htmlFor="message" >Motivo consulta</label>
+		  <textarea
+		    rows="6"
+		    type="text"
+		    name="message"
+		    className="form-control"
+		    id="text"
+		    required
+		  />
+		</div>
+		<button type="submit" className="btn btn-primary">
+		  Envíar
+		</button>
+	      </form>
+	    </div>
+	  </section>
         </PortfolioProvider>
       </Layout>
     </>
