@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import icon1 from '../images/icons/05.svg';
 import p1 from '../images/projects/p1.jpg';
 import p2 from '../images/projects/p2.jpg';
@@ -24,13 +25,19 @@ const Projects = () => {
       <div className="container-fluid">
         <div className="row" style={{ marginTop: 100, marginBottom: 24 }}>
           <div className="col-md-4 mb-3">
-            <img src={p1} style={{ width: '100%' }} alt="project" />
+            <Link to="/proyectos/">
+              <img src={p1} style={{ width: '100%' }} alt="project" />
+            </Link>
           </div>
           <div className="col-md-4 mb-3">
-            <img src={p2} style={{ width: '100%' }} alt="project" />
+            <Link to="/proyectos/">
+              <img src={p2} style={{ width: '100%' }} alt="project" />
+            </Link>
           </div>
           <div className="col-md-4 mb-3">
-            <img src={p3} style={{ width: '100%' }} alt="project" />
+            <Link to="/proyectos/">
+              <img src={p3} style={{ width: '100%' }} alt="project" />
+            </Link>
           </div>
         </div>
       </div>
