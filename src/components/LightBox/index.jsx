@@ -18,26 +18,26 @@ export default class LightboxProject extends React.Component {
 
     return (
       <div>
-	<a onClick={() => this.setState({ isOpen: true })}>{children}</a>
+        <a onClick={() => this.setState({ isOpen: true })}>{children}</a>
 
-	{isOpen && (
-	  <Lightbox
-	    mainSrc={images[photoIndex]}
-	    nextSrc={images[(photoIndex + 1) % images.length]}
-	    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-	    onCloseRequest={() => this.setState({ isOpen: false })}
-	    onMovePrevRequest={() =>
-	      this.setState({
-		photoIndex: (photoIndex + images.length - 1) % images.length,
-	      })
-	    }
-	    onMoveNextRequest={() =>
-	      this.setState({
-		photoIndex: (photoIndex + 1) % images.length,
-	      })
-	    }
-	  />
-	)}
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length,
+              })
+            }
+          />
+        )}
       </div>
     );
   }
