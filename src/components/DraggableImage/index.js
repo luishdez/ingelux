@@ -12,7 +12,7 @@ const DraggableImage = () => {
     >
       <ReactCompareImage
         sliderLineWidth="5"
-        sliderLineColor="#000"
+        sliderLineColor="#fff"
         leftImage={img1}
         rightImage={img2}
       />
