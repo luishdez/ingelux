@@ -15,3 +15,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.draggable > div > div > div:first-child {
+  background-color: red;
+  flex: 0 .15 auto !important;
+}
