@@ -25,12 +25,16 @@ const responsive = {
     items: 1,
   },
   sm: {
-    breakpoint: { min: 900, max: 5000 },
-    items: 4,
+    breakpoint: { min: 500, max: 990 },
+    items: 2,
   },
   md: {
-    breakpoint: { max: 900, min: 0 },
-    items: 2,
+    breakpoint: { min: 990, max: 1200 },
+    items: 3,
+  },
+  lg: {
+    breakpoint: { min: 1200, max: 10000 },
+    items: 4,
   },
 };
 
