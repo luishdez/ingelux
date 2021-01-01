@@ -34,7 +34,7 @@ export default () => {
         <meta charSet="utf-8" />
         <title>{title || 'Ingelux'}</title>
         <html lang={lang || 'es'} />
-        <meta name="description" content={description || 'Ingelux'} />
+        <meta name="description" content={description || 'Ingelux SL'} />
       </Helmet>
       <Layout>
         <PortfolioProvider>
