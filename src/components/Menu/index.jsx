@@ -8,19 +8,20 @@ import { mdiLinkedin } from '@mdi/js';
 import logo from '../../images/logos/right.svg';
 
 const Menu = () => {
-  const [isScrolled, setIsOnScrolled] = useState('');
+  const [isScrolled, setIsScrolled] = useState('');
+  const [isToggled, setIsToggled] = useState(false);
 
   useScrollPosition(
     ({ currPos }) => {
       if (typeof window !== `undefined` && window.location.pathname === '/contacto/') {
-        setIsOnScrolled('navbar-scrolled');
+        setIsScrolled('navbar-scrolled');
         return;
       }
 
       const checkScrolled = currPos.y < 0 ? 'navbar-scrolled' : '';
 
       if (checkScrolled !== isScrolled) {
-        setIsOnScrolled(checkScrolled);
+        setIsScrolled(checkScrolled);
       }
     },
     [isScrolled]
@@ -31,12 +32,17 @@ const Menu = () => {
     finalPath = window.location.pathname;
 
     if (finalPath === '/contacto/' && isScrolled === '') {
-      setIsOnScrolled('navbar-scrolled');
+      setIsScrolled('navbar-scrolled');
     }
   }
 
   return (
-    <Navbar bg="transparent" expand="md" className={`fixed-top ${isScrolled}`}>
+    <Navbar
+      onToggle={(toggle) => setIsToggled(toggle)}
+      bg="transparent"
+      expand="md"
+      className={`fixed-top ${isToggled && 'navbar-toggled'} ${isScrolled}`}
+    >
       <div className="container">
         <Navbar.Brand href="/">
           <img src={logo} alt="" style={{ height: 73 }} loading="lazy" />
