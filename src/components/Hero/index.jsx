@@ -27,7 +27,7 @@ const Hero = () => {
         <Fade top={isDesktop} bottom={isMobile} duration={1000} delay={300} distance="30px">
           <h1 className="hero-title">
             <span className="text-white">Ingeniería e </span>
-            <span className="text-color-main">iluminación</span>
+            <span className="text-color-main">Iluminación</span>
           </h1>
         </Fade>
       </Container>
