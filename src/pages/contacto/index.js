@@ -28,7 +28,9 @@ export default () => {
               <div className="col-md-4 mb-4">
                 <img className="icon-feature mb-2" src={phone} style={{ width: 56 }} alt="" />
                 <h3>Teléfono</h3>
-                <p className="mt-2 text-feature">+34 685 866 594</p>
+                <p className="mt-2 text-feature">
+                  <a href="tel:+34 911 98 40 28">+34 911 98 40 28</a>
+                </p>
               </div>
               <div className="col-md-4 mb-4">
                 <img className="icon-feature mb-2" src={place} style={{ width: 56 }} alt="" />
@@ -38,7 +40,9 @@ export default () => {
               <div className="col-md-4 mb-4">
                 <img className="icon-feature mb-2" src={email} style={{ width: 56 }} alt="" />
                 <h3>Email</h3>
-                <p className="mt-2 text-feature">info@ingeluxsl.com</p>
+                <p className="mt-2 text-feature">
+                  <a href="mailto:info@ingeluxsl.com">info@ingeluxsl.com</a>
+                </p>
               </div>
             </div>
           </div>
