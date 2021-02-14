@@ -64,23 +64,23 @@ const ProjectCarousel = () => {
         <div className="project-item">
           <img className="icon-feature mb-2" src={industry} style={{ width: 56 }} alt="" />
           <h3>Sector industrial</h3>
-          <p className="text-small mt-2 text-feature">
+          <p className="mt-2 text-feature">
             La iluminación de grandes superficies con una homogeneidad continua es una de nuestras
             especialidades
           </p>
         </div>
         <div className="project-item">
-          <img className="icon-feature mb-2" src={car} style={{ width: 56 }} alt="" />
+          <img className="icon-feature mb-2" src={hotel} style={{ width: 56 }} alt="" />
           <h3>Hoteles y Retail</h3>
-          <p className="text-small mt-2 text-feature">
+          <p className="mt-2 text-feature">
             Conseguir el confort y el relax de los clientes a la vez que la capacidad de centrar la
             atención en un producto es posible con una buena iluminación
           </p>
         </div>
         <div className="project-item">
-          <img className="icon-feature mb-2" src={hotel} style={{ width: 56 }} alt="" />
+          <img className="icon-feature mb-2" src={car} style={{ width: 56 }} alt="" />
           <h3>Concesionarios</h3>
-          <p className="text-small mt-2 text-feature">
+          <p className="mt-2 text-feature">
             La exigencia de un alto rendimiento en el grado de iluminación para mostrar el hasta el
             ultimo detalle del producto en venta
           </p>
@@ -88,7 +88,7 @@ const ProjectCarousel = () => {
         <div className="project-item">
           <img className="icon-feature mb-2" src={offices} style={{ width: 56 }} alt="" />
           <h3>Oficinas</h3>
-          <p className="text-small mt-2 text-feature">
+          <p className="mt-2 text-feature">
             El confort visual es un requisito para poder conseguir una mayor productividad en el
             trabajo
           </p>
@@ -96,7 +96,7 @@ const ProjectCarousel = () => {
         <div className="project-item">
           <img className="icon-feature mb-2" src={gas} style={{ width: 56 }} alt="" />
           <h3>Gasolineras</h3>
-          <p className="text-small mt-2 text-feature">
+          <p className="mt-2 text-feature">
             Conseguir el confort y el relax de los clientes a la vez que la capacidad de centrar la
             atención en un producto es posible con una buena iluminación
           </p>
