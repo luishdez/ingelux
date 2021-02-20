@@ -24,7 +24,7 @@ const About = () => {
           <div className="col-sm-6 col-md-3 mb-4">
             <img className="icon-feature mb-2" src={icon1} style={{ width: 56 }} alt="" />
             <h3>Profesionalidad</h3>
-            <p className="text-small mt-2 text-feature">
+            <p className="mt-2 text-feature">
               Cuidamos tanto el trato con el cliente que nos convertimos en parte de tu empresa,
               porque tu éxito, es el nuestro.
             </p>
@@ -32,7 +32,7 @@ const About = () => {
           <div className="col-sm-6 col-md-3 mb-4">
             <img className="icon-feature mb-2" src={icon2} style={{ width: 56 }} alt="" />
             <h3>Un gran equipo</h3>
-            <p className="text-small mt-2 text-feature">
+            <p className="mt-2 text-feature">
               Contamos con un equipo de profesionales cualificados y con amplia experiencia para
               ofrecer el servicio que necesitas.{' '}
             </p>
@@ -40,7 +40,7 @@ const About = () => {
           <div className="col-sm-6 col-md-3 mb-4">
             <img className="icon-feature mb-2" src={icon3} style={{ width: 56 }} alt="" />
             <h3>Lighting designers</h3>
-            <p className="text-small mt-2 text-feature">
+            <p className="mt-2 text-feature">
               Creamos soluciones personalizadas para cada proyecto evaluando los factores de
               eficiencia, estética, calidad y costes.
             </p>
@@ -48,7 +48,7 @@ const About = () => {
           <div className="col-sm-6 col-md-3 mb-4">
             <img className="icon-feature mb-2" src={icon4} style={{ width: 56 }} alt="" />
             <h3>Innovación</h3>
-            <p className="text-small mt-2 text-feature">
+            <p className="mt-2 text-feature">
               Transformamos los espacios con la iluminación. Trabajando la luz con las luminarias de
               las mejores marcas desde hace más de 5 años.{' '}
             </p>

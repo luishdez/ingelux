@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import Layout from '../components/Layout';
-import { headData } from '../mock/data';
 import { PortfolioProvider } from '../context/context';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -18,7 +17,10 @@ import logo5 from '../images/logos/05.png';
 import logo6 from '../images/logos/06.png';
 
 export default () => {
-  const { title, lang, description } = headData;
+  const desc = `En INGELUX Ingeniería e Iluminación ofrecemos soluciones
+  innovadoras en proyectos de iluminación. Realizamos estudios lumínicos de
+  exterior e interior con Dialux. Especializados en obra nueva y reforma con sustitución a led
+  !Entra y conócenos!`;
 
   const headingStyles = {
     position: 'absolute',
@@ -32,9 +34,9 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || 'Ingelux'}</title>
-        <html lang={lang || 'es'} />
-        <meta name="description" content={description || 'Ingelux SL'} />
+        <title>Proyectos técnicos de iluminación led | INGELUX</title>
+        <html lang="es" />
+        <meta name="description" content={desc} />
       </Helmet>
       <Layout>
         <PortfolioProvider>

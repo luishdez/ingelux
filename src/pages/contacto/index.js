@@ -2,25 +2,25 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/Layout';
-import { headData } from '../../mock/data';
 import phone from '../../images/icons/09.svg';
 import place from '../../images/icons/10.svg';
 import email from '../../images/icons/11.svg';
 import '../../style/main.scss';
 
 export default () => {
-  const { title, lang, description } = headData;
+  const description = `Especializados en el sector industrial, oficinas, hoteles,
+  retail entre otros. !Entra y conoce un poco más sobre nuestros proyectos!`;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || 'Ingelux'}</title>
-        <html lang={lang || 'es'} />
-        <meta name="description" content={description || 'Ingelux'} />
+        <title>Contacto | INGELUX Ingeniería e Iluminación</title>
+        <html lang="es" />
+        <meta name="description" content={description} />
       </Helmet>
       <Layout>
-        <section id="contact-hero" className="text-center" style={{ minHeight: 500 }} />
+        <section id="contact-hero" className="text-center" style={{ minHeight: 400 }} />
         <section style={{ position: 'relative' }} id="nosotros" className="p-section">
           <div id="prev-nosotros" style={{ position: 'absolute', top: -90 }} />
           <div className="container text-center">
@@ -35,7 +35,11 @@ export default () => {
               <div className="col-md-4 mb-4">
                 <img className="icon-feature mb-2" src={place} style={{ width: 56 }} alt="" />
                 <h3>Localización</h3>
-                <p className="mt-2 text-feature">Calle de los Arcos 5 28033 Madrid</p>
+                <p className="mt-2 text-feature">
+                  <a href="https://www.google.es/maps/place/Calle+de+los+Arcos,+5,+28033+Madrid/@40.4788491,-3.6474385,17.03z/data=!4m5!3m4!1s0xd422ebefb05be23:0x3ca36f98d390e630!8m2!3d40.4788002!4d-3.6452148">
+                    Calle de los Arcos 5 28033 Madrid
+                  </a>
+                </p>
               </div>
               <div className="col-md-4 mb-4">
                 <img className="icon-feature mb-2" src={email} style={{ width: 56 }} alt="" />
